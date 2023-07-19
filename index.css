@@ -179,11 +179,89 @@ footer{
     }
     
     .box{
+        margin-top: 130px;
+        width:360px;
+        height:350px;
+        margin-left: 75px;
+        margin-right: 20px;
+    }
+    .wakeup{
+        width: 220px;
+    }
+    .wake select{
+        width: 180px;
+    }
+    .hr{
+        width:10px;
+    }
+    .good{
+        width: 360px;
+        margin: 10px 0px 10px 80px;
+    }
+    button{
+        width:130px;
+    }
+    .right{
+        margin-right: 20px;
+    } 
+    .alarm{
+        margin-left: 80px;
+        margin-bottom: 20px;;
+    }
+    .my{
+        margin-left: 70px;
+        position: absolute;
+        top:96px;
+        right: -30px;
+    }
+    .timebox{
+        width: 380px;
+    }
+    .time{
+         margin-left: -1px;
+    }
+    .am{
+        margin-left: -1px;
+    }
+    .z1{
+        width: 350px;
+        position: relative;
+        z-index: -1;
+        top:-70px;
+        right: -15px;
+    
+    }
+    .z2{
+        width: 315px;
+        position: relative;
+        z-index: -2;
+        top:-140px;
+        right: -35px;
+    }
+    .grab{
+        width: 360px;
+    font-size:12px;
+    margin-left: 60px;
+    }
+    .imgs img{
+        width: 375px;
+        margin-left: 60px;
+    }
+    footer{
+        font-size: 11px;
+    }
+   
+}
+/* @media screen and (max-width:420px) {
+    .clock > img{
+        margin:10px 100px;
+    }
+    
+    .box{
         width:360px;
         height:350px;
         margin-left:75px;
         margin-right: 20px;
-        /* padding: 0px 50px; */
     }
     .wakeup{
         width: 220px;
@@ -202,7 +280,6 @@ footer{
         width:130px;
     }
      .right{
-        /* margin-left: 0px; */
         margin-right: 20px;
     } 
     .alarm{
@@ -245,12 +322,13 @@ footer{
     footer{
         font-size: 11px;
     }
-}
+} */
 @media screen and (min-width:421px) and (max-width:780px) {
     .box{
         width:700px;
         height:380px;
         margin:0px 20px;
+        margin-top: 150px;
     }
     .box p{
         font-size: 19px;
@@ -271,10 +349,11 @@ footer{
     .alarm{
         margin-left: 20px;
         margin-bottom: 20px;;
-    }
-    
+    } 
     .my{
         margin-left: 0px;
+        position: absolute;
+        top:120px;
     }
     .timebox{
         width: 705px;
