@@ -1,6 +1,6 @@
 
 let good=document.querySelector(".good");
-let g1=document.querySelector(".grab");
+let g1=document.querySelector("#grab");
 let image=document.querySelector('#im');
 
 let hour=document.querySelector('#tm1');
@@ -8,38 +8,35 @@ let mins=document.querySelector('#tm2');
 let secs=document.querySelector('#tm3');
 let ampm=document.querySelector('.am');
 
-function timedisplay(){
-    let dis=new Date();
-    let hrs=dis.getHours();
-    let min=dis.getMinutes();
-    let sec=dis.getSeconds();
 
-    if(hrs>=12){
-        ampm.innerHTML="PM";
+function timedisplay() {
+    let dis = new Date();
+    let hrs = dis.getHours();
+    let min = dis.getMinutes();
+    let sec = dis.getSeconds();
+
+    if (hrs >= 12) {
+        ampm.innerHTML = "PM";
+    } else {
+        ampm.innerHTML = "AM";
     }
-    else{
-        ampm.innerHTML="AM";
+    if (hrs >= 7 && hrs < 12) {
+        g1.textContent = "GRAB SOME HEALTHY BREAKFAST!!!";
+    } else if (hrs >= 12 && hrs < 16) {
+        g1.textContent = "LET'S HAVE SOME LUNCH !!";
+    } else if (hrs >= 16 && hrs < 19) {
+        g1.textContent = "STOP YAWING,GET SOME TEA..ITS JUST EVENING!";
+    } else if (hrs >= 19 || hrs < 7) {
+        g1.textContent = "CLOSE YOUR EYES AND GO TO SLEEP";
     }
-    if(hrs>=7 && hrs<12){
-        g1.innerText="GRAB SOME HEALTHY BREAKFAST!!!";
-      }
-    else if(hrs>=12 && hrs<16){
-        g1.innerHTML="<h1>LET'S HAVE SOME LUNCH !!</h1>";
+    if (hrs > 12) {
+        hrs = hrs - 12;
     }
-     else if(hrs>=16 && hrs<19){
-     g1.innerHTML="<h1>STOP YAWING,GET SOME TEA..ITS JUST EVENING!</h1>";
-        
-    }
-    else if(hrs.innerText>=19 && hrs.innerText<7){
-            g1.innerHTML="<h1>CLOSE YOUR EYES AND GO TO SLEEP</h1>";
-    }
-    if(hrs>12){
-        hrs=hrs-12;
-    }
-    hour.innerHTML=hrs;
-    mins.innerHTML=min;
-    secs.innerHTML=sec;
+    hour.innerHTML = hrs;
+    mins.innerHTML = min;
+    secs.innerHTML = sec;
 }
+
 setInterval(()=>{
     timedisplay();
 },1000)
