@@ -8,7 +8,6 @@ let mins=document.querySelector('#tm2');
 let secs=document.querySelector('#tm3');
 let ampm=document.querySelector('.am');
 
-
 function timedisplay() {
     let dis = new Date();
     let hrs = dis.getHours();
