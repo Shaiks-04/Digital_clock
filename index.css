@@ -83,12 +83,14 @@ button:hover{
 }
 .timebox{
     background-color: #FFFFFF;
-    width:460px;
+    width:520px;
     height:100px;
     display: flex;
+    gap: 12px;
     align-items: center;
     border-radius: 10px;
     border: 1px solid white;
+    margin-left: -10px;
 }
 .ti{
     background-color: #FFFFFF;
@@ -112,7 +114,7 @@ button:hover{
     margin-left: 20px;
     height: 70px;
     font-size: 25px;
-    padding: 20px 10px 0px 0px;
+    padding: 20px 10px 0px 10px;
 }
 .timebox p{
     color: #3D087B;
@@ -220,9 +222,10 @@ footer{
         right: 10px;
     }
     .timebox{
-        width: 350px;
+        width: 95vw;
+        gap:0px;
         position: relative;
-        left: -5px;
+        left: 2px;
     }
     .time{
          margin-left: -1px;
@@ -247,13 +250,14 @@ footer{
         right: -35px;
     }
     .grab{
-        width: 340px;
+        width:90vw;
     font-size:12px;
-    /* margin-left:20px; */
+    margin-left:-2vw;
     }
     .imgs img{
-        width: 360px;
-        /* margin-left: 20px; */
+        width: 95vw;
+        margin-left:-2vw;
+
     }
     footer{
         font-size: 11px;
@@ -332,7 +336,7 @@ footer{
         font-size: 11px;
     }
 } */
-@media screen and (min-width:421px) and (max-width:780px) {
+@media screen and (min-width:500px) and (max-width:780px) {
     .box{
         width:700px;
         height:380px;
@@ -365,7 +369,7 @@ footer{
         top:120px;
     }
     .timebox{
-        width: 705px;
+        width: 94vw;
     }
     .time{
          margin: 45px;
@@ -386,7 +390,7 @@ footer{
         right: -45px;
     }
     .grab{
-        width: 700px;
+        width: 89vw;
     font-size:12px;
     margin-left: 0px;
     }
