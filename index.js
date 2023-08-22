@@ -1,6 +1,6 @@
 
 let good=document.querySelector(".good");
-let g1=document.querySelector("#grab");
+let g1=document.querySelector(".grab");
 let image=document.querySelector('#im');
 
 let hour=document.querySelector('#tm1');
